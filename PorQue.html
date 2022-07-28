@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- VERSÃO 4.7.0 PARA PUXAR OS ICONS PARA O HTML -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    <title>GM || Store</title><!-- NOME DA ESCOLA -->
+    <link rel="stylesheet" href="Css/PQestilo.css"><!-- LINKANDO O CSS -->
+
+</head>
+<body>
+
+    <section class="Principal"><!-- INICIANDO A SECTION PRINCIPAL DA PARTE DE CIMA -->
+
+        <div class="Transparencia"></div>
+
+        <div class="Centro">
+
+            <header>
+
+                <div class="Icones-Sociais">
+
+                <a href="https:/facebook.com" target="blank"><i class="fa fa-facebook-square"></i></a><!-- PUXEI O ICON NO https://www.w3schools.com/icons/fontawesome_icons_brand.asp -->
+                <a href="https:instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
+
+                </div><!-- FECHANDO ICONESS-SOCIAIS -->
+
+                <div class="Clear"></div><!-- Clear serve para adequar os itens flutuantes a (Div mãe) -->
+
+                <div class="Logo">
+
+                    <img class="Logo-img" src="Img/GMStoreBr.png">
+
+                </div><!-- FECHANDO LOGO -->
+
+                <nav class="Desktop">
+
+                    <ul>
+                        <li><a href="Index.html">Inicio</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="PorQue.html">Por Que Nós?</a></li>
+                        <li><a href="Depoimento.html">Depoimentos</a></li>
+                        <li><a href="CorpoDocente.html">Corpo Docente</a></li>
+                    </ul>
+
+                </nav><!-- FECHANDO DESKTOP -->
+
+                <nav class="Mobile">
+
+                    <i class="fa fa-bars"></i>
+
+                    <ul>
+                        <li><a href="Index.html">Inicio</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="PorQue.html">Por Que Nós?</a></li>
+                        <li><a href="Depoimento.html">Depoimentos</a></li>
+                        <li><a href="CorpoDocente.html">Corpo Docente</a></li>
+                    </ul>
+
+                </nav><!-- FECHANDO MOBILE -->
+
+                <div class="Clear"></div><!-- Clear serve para adequar os itens flutuantes a (Div mãe) -->
+
+            </header><!-- FECHANDO O HEADER -->
+
+            <div class="Conteudo-Cabecalho">
+
+                <h2><span>Por Que Nós</span> ?</h2>
+
+                <p>
+                    Iriei falar um pouco mais a fundo sobre nossa empresa, a empresa GM - STORE esta entre os top 3 empresas que mais
+                    vendem games e acessorios que o cliente procura, aqui você encontra diversas variedades de Jogos, PCs, Acessorios para Playstation, Xbox, Nitendo e PCs,
+                    como por exemplo: Cadeiras Gamers, Headset, Mousepad de diversos tamanhos entre outras coisas...
+                    Trabalhamos com transportadora, para que sua entrega chegue rápido e com muita segurança para não danificar nenhum item na hora da entrega.
+                </p>
+
+            </div><!-- FECHANDO O CONTEUDO-CABEÇALHO -->
+
+        </div><!-- ESTOU FECHANDO CENTRO -->
+
+    </section><!-- FECHANDO A SECTION PRINCIPAL DA PARTE DE CIMA -->
+    
+    <footer>
+
+        <p>©2021 GG || STORE - Todos os direitos reservados</p>
+        <p><a href="#">Contato</a>|<a href="#">Politica</a>|<a href="#">Regras</a>|<a href="#">Equipe</a></p>
+        <p><a href="#">Fale Conosco</a>|<a href="#">Sobre GG Store</a></p>
+
+    </footer>
+
+    <!-- INICIANDO JAVA SCRIPT PARA PUXAR OS LINKS PARA O HAMBURGUE -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+
+        $(function(){
+
+            $('nav.Mobile i').click(function(){
+
+                var clicando = $(this).parent().find('ul');
+                if(clicando.is(':visible')==false){
+                    clicando.fadeIn();/* CLICK APARECE */
+                }else{
+                    clicando.fadeOut();/* CLICK SOME */
+                }
+
+            })
+
+        })
+
+    </script>
+
+</body>
+</html>

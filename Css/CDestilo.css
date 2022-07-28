@@ -1,0 +1,788 @@
+*{/* FOLHA DE ESTILO */
+
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+
+    height: 100%;/* ALTURA DA PÁGINA */ /* A LARGURA SE DEFINE SOZINHA */
+
+}
+
+/* INICIANDO CLASSES AUXILIARES */
+
+section.Principal{/* DESSE JEITO SERVE PARA MOSTRAR O CAMINHO */
+
+    position: relative;
+    background-image: url('../Img/GTA1.0.png'); /* PUXANDO ALGUMA IMAGEM EM GIF E APLICANDO AQUI ELA FUNCIONA */
+    background-attachment: fixed;
+    background-size: cover;/* SE AJUSTA EM RELAÇÃO A TELA */
+    background-position: center;
+    width: 100%;
+    padding: 0.94em 0;
+    min-height: 25%;/* ALTURA PRINCIPAL DO PRIMEIRO */
+
+}
+
+.Centro{
+
+    margin:  0 auto;
+    max-width: 80em;
+    padding: 0 2%;
+
+}
+
+.Clear{
+
+    clear: both;
+
+}
+
+/* .Transparencia{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+} */
+
+section.Principal header{
+
+    position: relative;/* IRA FICAR RELATIVA A CLASSE PRINCIPAL */
+    padding-bottom: 0.7em;
+    border-bottom: #ffffff 1px solid;
+    z-index: 2;
+
+}
+
+.Icones-Sociais{
+
+    float: right;
+
+}
+
+.Icones-Sociais a{
+
+    color: white;
+    text-decoration: none;/* RETIRAR O SUBLINHADO DE BAIXO */
+    font-size: 1.3em;
+    font-weight: bold;/* DEIXAR EM NEGRITO */
+    margin-right: 0.625em;
+
+}
+ 
+.Logo{
+
+    margin-top: 1,25em;
+    float: left;
+    color: white;
+    font-size: 1.56em;
+    font-weight: bold;
+
+}
+
+.Logo-img{
+
+    width: 6.25em;
+    height: 6.25em;
+
+}
+
+nav.Desktop{
+
+    margin-top: 1.25em;
+    float: right;
+
+}
+
+nav.Desktop ul{
+
+    list-style-type: none;/* SERVE PARA RETIRAR OS PONTOS DA LISTA */
+    margin-top: 50px;
+
+}
+
+nav.Desktop li{
+
+    display: inline-block;
+    margin: 0 0.93em;
+    font-size: 1.18em;
+    font-weight: lighter;
+
+}
+
+nav.Desktop a{
+
+    color: white;
+    text-decoration: none;/* RETIREI A LINHA SUBLINHADA */
+
+}
+
+nav.Desktop a:hover{ /* SERVE PARA MUDAR O CSS QUANDO PASSAR O MOUSE EM CIMA */
+
+    color: #ff002f;
+    /* border-bottom: rgb(255, 255, 255) 1px solid; */ /* APLIQUEI UAM LINHA BRANCA EMBAIXO */
+    /* opacity: 0.2; */
+
+}
+
+nav.Mobile{
+
+    display: none;
+    float: right;
+
+}
+
+nav.Mobile > i{/* MEXENDO NO CSS DO HAMBURGUE , NAV MOBILE */
+
+    top: 5.43em;
+    font-size: 1.56em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;/* TORNOU O ICON CLICAVEL */
+    position: relative;
+
+}
+
+nav.Mobile ul{/* MEXENDO NO CSS DO HAMBURGUE , NAV MOBILE */
+
+    position: absolute;
+    left: 0;
+    top: 13em;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    list-style-type: none;
+    display: none;
+
+}
+
+nav.Mobile li{/* MEXENDO NO CSS DO HAMBURGUE , NAV MOBILE */
+
+    font-weight: lighter;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.5em 0;
+
+}
+
+nav.Mobile a{/* MEXENDO NO CSS DO HAMBURGUE , NAV MOBILE */
+
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;/* DEIXAR TUDO EM MAIUSCULO */
+
+}
+
+.Box-Texto{
+
+    width: 100%;
+    text-align: center;
+    padding: 1.68em 2%;
+    background: #ff002f;
+
+}
+
+.Box-Texto-Titulo{
+
+    display: inline-block;
+   /*  border-bottom: 1px solid white; */
+    color: white;/* COR DA LETRA */
+    font-size: 1.3em;/* TAMANHO DA LETRA */
+    text-transform: uppercase; /* SERVE PARA DEIXAR TODAS AS LETRAS MAIUSCULAS */
+    font-family: 'Orbitron', sans-serif;/* FONT RETIRADA DO GOOGLE */
+
+}
+
+.Box-Principal-Comentario{
+
+    background-image: url('../Img/GTA1.0.png');
+    background-attachment: fixed;
+    background-size: cover;/* SE AJUSTA EM RELAÇÃO A TELA */
+    background-position: center;
+    height: 55.5%;
+
+}
+
+
+.Box-Avatar{
+
+    display: inline-block;
+    width: 3.125em;
+    height: 3.125em;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    vertical-align: middle;
+    margin-bottom: 8px;
+
+}
+
+.Box-Comentario{
+
+    padding: 0.65em 0.5em;
+    /* border: 1px solid #000; */
+    padding-bottom: 0.875em;
+    /* box-shadow: 10px 5px 15px  rgb(41, 41, 41); */
+    max-width: 50%;/* DETERMINANDO ONDE A CAIXA VAI FICAR NA TELA */
+    text-align: justify;/* TEXTOS TRAVADOS NA LATERAL */
+
+}
+
+.Comentario{/* MEXENDO NA CAIXA QUE JÁ TEM OS CONTEUDOS DENTRO */
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 5px;/* MEXENDO EXTERNAMENTE */
+    padding: 15px;/* MEXENDO INTERNAMENTE */
+    border: rgb(0, 0, 0) 2px solid;
+    margin-top: 15%;
+    transition: 0.3s;
+    
+
+    /* ISSO SERVE PARA FAZER UM GRADIENTE NO OBJETO SELECIONADO */
+    /* background: -moz-linear-gradient(bottom, #c70b0b, #fff 50%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #be0707), color-stop(0.20, #fff)); */
+
+}
+
+/* .Comentario:hover{
+
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+
+   /* box-shadow: 0 0 8px 15px #ff002f, inset 0 0 4px 5px #a0a0a0;/* PRIMEIRA SOMBRA PRA FORA, SEGUNDA SOMBRA PRA DENTRO 
+   /*cursor: pointer; 
+
+}*/
+
+.Comentario h2{
+
+    /* text-align: center; */
+    padding-bottom: 0.525em;/* PARA DAR UM ESPAÇAMENTO DO "P" NA PARTE DE BAIXO */
+
+}
+
+.Comentario h5{
+
+    margin-bottom: 8px;
+    color: rgb(139, 139, 139);
+
+}
+
+.Comentario p{
+
+    font-size: 1.2em;
+
+}
+
+.Equipe{
+
+    background-image: url('../Img/GTA1.0.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;/* DEIXANDO A IMG FIXADA NO FUNDO */
+
+}
+
+.Equipe-img{
+
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.93em;
+
+}
+
+.img-equipe{
+
+    height: auto;
+    width: 50%;
+
+}
+
+/* MEXENDO AQUI APENAS NO FOOTER */
+
+footer{
+
+    width: 100%;
+    padding: 0.625em 2%;
+    background-color: black;
+    color: white;
+    height: 5em;/* 240px */
+    /* padding-top: 1.93em; */
+    text-align: center;
+    font-size: 0.93em;
+    padding-top: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+footer a{
+
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+
+}
+
+footer a:hover{
+
+    color: rgb(49, 49, 49);
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+/* AQUI ACABEI DE FORMATAR O FOOTER */
+
+::-webkit-scrollbar{/* APENAS A BARRA EM SI */
+
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-track{/* COR DE FUNDO DA BARRA */
+
+    background-color: black;
+
+}
+
+::-webkit-scrollbar-thumb{/* MEXENDO NA BARRA DE ROLAGEM */
+
+    background-color: #ff002f;
+    border-radius: 4px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{/* MEXEN */
+
+    background-color: rgb(167, 7, 7);
+
+}
+
+
+/* INICIANDO RESPOSIVIDADE */
+
+
+@media screen and (max-width: 1366px) {
+
+    section.Sobre > .Centro {
+
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 4.37em;
+    
+    }
+
+    .Box-Texto {
+        width: 100%;
+        text-align: center;
+        padding: 0.68em 2%;
+        font-size: 15px;
+        background: #ff002f;
+    
+    }
+
+}
+
+@media screen and (max-width: 770px) {/* MAXIMO DE LARGURA *//* A BAIXO DE 768 OS ITENS IRÃO SE COMPORTAR DE OUTRO MODO*/
+
+    .Conteudo-Cabecalho {
+
+        position: relative;
+        z-index: 1;
+        max-width: 703px;
+        margin: 5.5em 1.25em;
+
+    }
+    
+    nav.Mobile{
+
+        display: block;
+
+    }
+
+    nav.Desktop{
+
+        display: none;
+
+    }
+
+    .Box-Cursos > .Centro{
+
+        display: flex;
+       flex-direction: column;
+    
+    }
+
+    .Box-Cursos-Conteudo {
+
+        border: 0.12em solid rgb(255, 255, 255);
+        /* box-shadow: 3px 3px 20px rgb(0 0 0); */
+        min-height: 10.75em;
+        padding: 0.18em;
+        width: 250px;
+        margin-bottom: 15px;
+
+    }
+
+    .Box-Cursos-Individuais {
+        
+        width: 44.3%;
+        padding: 0 2.5em;
+
+    }
+
+    .Box-Texto {
+
+        width: 100%;
+        text-align: center;
+        padding: 0.68em 2%;
+        font-size: 15px;
+        background: #ff002f;
+    
+    }
+
+    .Box-Comentario {
+        
+        padding: 0.65em 0.5em;
+        padding-bottom: 0.875em;
+        max-width: 94%;
+        text-align: justify;
+    
+        }
+    
+       .Comentario {
+    
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        padding: 15px;
+        border: rgb(0, 0, 0) 2px solid;
+        margin-top: 15%;
+       /*  transition: 0.3s; */
+    
+        }
+
+    .T50 {
+
+        float: left;
+        width: 100%;
+        padding: 0 1.25em;
+        margin: 1.87em 0;
+
+    }
+    
+    .Time > .T50 {
+
+        width: 100%;
+        margin: 0.93em 1%;
+        padding: 0.93em;
+
+    }
+
+    section.Section-Info {
+
+        padding: 0em;
+
+    }
+
+    section.Sobre > .Centro {
+
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 3.37em;
+
+    }
+
+}
+
+@media screen and (max-width: 652px) {
+
+    .Box-Cursos-Individuais {
+        
+        width: 52.3%;
+        padding: 0 2.5em;
+
+    }
+
+    .Conteudo-Cabecalho {
+
+        position: relative;
+        z-index: 1;
+        max-width: 650px;
+        margin: 5.5em 1.25em;
+    }
+
+    .Box-Comentario {
+        
+        padding: 0.65em 0.5em;
+        padding-bottom: 0.875em;
+        max-width: 94%;
+        text-align: justify;
+    
+        }
+    
+       .Comentario {
+    
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        padding: 15px;
+        border: rgb(0, 0, 0) 2px solid;
+        margin-top: 24%;
+       /*  transition: 0.3s; */
+    
+        }
+    
+}
+
+@media screen and (max-width: 556px) {
+
+    .Box-Cursos-Individuais {
+        
+        width: 59.3%;
+        padding: 0 2.5em;
+
+    }
+
+    section.Sobre > .Centro {
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 1.37em;
+    }
+
+    .Box-Comentario {
+        
+        padding: 0.65em 0.5em;
+        padding-bottom: 0.875em;
+        max-width: 94%;
+        text-align: justify;
+    
+        }
+    
+       .Comentario {
+    
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        padding: 15px;
+        border: rgb(0, 0, 0) 2px solid;
+        margin-top: 24%;
+       /*  transition: 0.3s; */
+    
+        }
+    
+}
+
+@media screen and (max-width: 483px) {
+
+    .Box-Cursos-Individuais {
+        
+        width: 72%;
+        padding: 0 2.5em;
+
+    }
+
+    .Box-Comentario {
+        
+        padding: 0.65em 0.5em;
+        padding-bottom: 0.875em;
+        max-width: 94%;
+        text-align: justify;
+    
+        }
+    
+       .Comentario {
+    
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        padding: 15px;
+        border: rgb(0, 0, 0) 2px solid;
+        margin-top: 24%;
+       /*  transition: 0.3s; */
+    
+        }
+    
+}
+
+@media screen and (max-width: 426px) {
+
+    .Box-Cursos-Individuais {
+        
+        width: 80%;
+        padding: 0 2.5em;
+
+    }
+
+    section.Sobre > .Centro {
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 1.37em;
+    }
+
+    .Box-Comentario {
+        
+        padding: 0.65em 0.5em;
+        padding-bottom: 0.875em;
+        max-width: 94%;
+        text-align: justify;
+    
+    }
+
+    .Comentario {
+
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        padding: 15px;
+        border: rgb(0, 0, 0) 2px solid;
+        margin-top: 24%;
+       /*  transition: 0.3s; */
+
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+
+    .Box-Cursos-Individuais {
+
+        width: 95%; 
+        padding: 0 2.5em;
+
+   }
+
+   .Box-Comentario {
+        
+    padding: 0.65em 0.5em;
+    padding-bottom: 0.875em;
+    max-width: 94%;
+    text-align: justify;
+
+    }
+
+   .Comentario {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 15px;
+    border: rgb(0, 0, 0) 2px solid;
+    margin-top: 24%;
+   /*  transition: 0.3s; */
+
+    }
+    
+}
+
+@media screen and (max-width: 367px) {
+
+    .Box-Cursos-Individuais {
+
+        width: 95%; 
+        padding: 0 2.5em;
+
+    }
+
+    section.Sobre > .Centro {
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 1.37em;
+    }
+    
+    .Box-Comentario {
+        
+        padding: 0.65em 0.5em;
+        padding-bottom: 0.875em;
+        max-width: 94%;
+        text-align: justify;
+    
+        }
+    
+       .Comentario {
+    
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin: 5px;
+        padding: 15px;
+        border: rgb(0, 0, 0) 2px solid;
+        margin-top: 24%;
+       /*  transition: 0.3s; */
+    
+        }
+
+}
+
+@media screen and (max-width: 305px) {
+    
+    .Box-Cursos-Individuais {
+
+        width: 100%; 
+       padding: 0 2.5em;
+       margin-left: -0.93em;
+
+   }
+
+}
+
+@media screen and (max-width: 298px) {
+    
+    Cursos-Conteudo {
+
+        border: 0.12em solid rgb(255, 255, 255);
+        /* box-shadow: 3px 3px 20px rgb(0 0 0); */
+        min-height: 10.75em;
+        padding: 0.18em;
+        width: 150px;
+        margin-bottom: 15px;
+
+    }
+
+    .Box-Cursos-Individuais {
+
+        width: 100%; 
+        padding: 0 2.5em;
+        margin-left: -0.93em;
+
+   }
+
+   .Box-Comentario {
+        
+    padding: 0.65em 0.5em;
+    padding-bottom: 0.875em;
+    max-width: 94%;
+    text-align: justify;
+
+    }
+
+   .Comentario {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 15px;
+    border: rgb(0, 0, 0) 2px solid;
+    margin-top: 14%;
+   /*  transition: 0.3s; */
+
+    }
+
+}

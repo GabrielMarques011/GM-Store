@@ -1,0 +1,835 @@
+*{/* FOLHA DE ESTILO */
+
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+
+    height: 100%;/* ALTURA DA PÁGINA */ /* A LARGURA SE DEFINE SOZINHA */
+
+}
+
+/* INICIANDO CLASSES AUXILIARES */
+
+section.Principal{/* DESSE JEITO SERVE PARA MOSTRAR O CAMINHO */
+
+    position: relative;
+    background-image: url('../Img/Controle.gif');/* PUXANDO ALGUMA IMAGEM EM GIF E APLICANDO AQUI ELA FUNCIONA */
+    background-attachment: fixed;
+    background-size: cover;/* SE AJUSTA EM RELAÇÃO A TELA */
+    background-position: center;
+    width: 100%;
+    padding: 0.94em 0;
+    min-height: 70%;/* ALTURA PRINCIPAL DO PRIMEIRO */
+
+}
+
+.Centro{
+
+    margin:  0 auto;
+    max-width: 80em;
+    padding: 0 2%;
+
+}
+
+.Clear{
+
+    clear: both;
+
+}
+
+.Transparencia{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;/* PEGAR 100% DA TELA */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+}
+
+section.Principal header{
+
+    position: relative;/* IRA FICAR RELATIVA A CLASSE PRINCIPAL */
+    padding-bottom: 0.7em;
+    border-bottom: #ffffff 1px solid;
+    z-index: 2;
+
+}
+
+.Icones-Sociais{
+
+    float: right;
+
+}
+
+.Icones-Sociais a{
+
+    color: white;
+    text-decoration: none;/* RETIRAR O SUBLINHADO DE BAIXO */
+    font-size: 1.3em;
+    font-weight: bold;/* DEIXAR EM NEGRITO */
+    margin-right: 0.625em;
+
+}
+ 
+.Logo{
+
+    margin-top: 1,25em;
+    float: left;
+    color: white;
+    font-size: 1.56em;
+    font-weight: bold;
+
+}
+
+.Logo-img{
+
+    width: 6.25em;
+    height: 6.25em;
+
+}
+
+nav.Desktop{
+
+    margin-top: 1.25em;
+    float: right;
+
+}
+
+nav.Desktop ul{
+
+    list-style-type: none;/* SERVE PARA RETIRAR OS PONTOS DA LISTA */
+    margin-top: 50px;
+
+}
+
+nav.Desktop li{
+
+    display: inline-block;
+    margin: 0 0.93em;
+    font-size: 1.18em;
+    font-weight: lighter;
+
+}
+
+nav.Desktop a{
+
+    color: white;
+    text-decoration: none;/* RETIREI A LINHA SUBLINHADA */
+
+}
+
+nav.Desktop a:hover{ /* SERVE PARA MUDAR O CSS QUANDO PASSAR O MOUSE EM CIMA */
+
+    color: #ff002f;
+    /* border-bottom: rgb(255, 255, 255) 1px solid; */ /* APLIQUEI UAM LINHA BRANCA EMBAIXO */
+    /* opacity: 0.2; */
+
+}
+
+nav.Mobile{
+
+    display: none;
+    float: right;
+
+}
+
+nav.Mobile > i{/* MEXENDO NO CSS DO HAMBURGUE , NAV MOBILE */
+
+    top: 5.43em;
+    font-size: 1.56em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;/* TORNOU O ICON CLICAVEL */
+    position: relative;
+
+}
+
+nav.Mobile ul{/* MEXENDO NO CSS DO HAMBURGUE , NAV MOBILE */
+
+    position: absolute;
+    left: 0;
+    top: 13em;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    list-style-type: none;
+    display: none;
+
+}
+
+nav.Mobile li{/* MEXENDO NO CSS DO HAMBURGUE , NAV MOBILE */
+
+    font-weight: lighter;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.5em 0;
+
+}
+
+nav.Mobile a{/* MEXENDO NO CSS DO HAMBURGUE , NAV MOBILE */
+
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;/* DEIXAR TUDO EM MAIUSCULO */
+
+}
+
+.Conteudo-Cabecalho{
+
+    position: relative;
+    z-index: 1;
+    /* max-width: 700px; */
+    margin: 5.5em 11.25em;
+
+}
+
+.Conteudo-Cabecalho h2{
+
+    color: white;
+    font-weight: normal;
+    font-size: 2.18em;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.Conteudo-Cabecalho h2 > span{
+
+    color: #ff002f;
+
+}
+
+.Conteudo-Cabecalho p{
+
+    color: white;
+    margin-top: 19px;
+    font-size: 1.06em;
+    text-align: center;
+    text-align: justify;
+
+}
+
+.Conteudo-Cabecalho a{
+
+    display: block;
+    width: 11.25em;
+    height: 2.81em;
+    background:  #ff002f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1.875em;
+    line-height: 2.81em;
+    margin-top: 1.8em;
+
+}
+
+.Conteudo-Cabecalho a:hover{
+
+    opacity: 0.7;
+    cursor: cell;
+
+}
+
+.Chamada-Cursos{
+
+    width: 100%;
+    text-align: center;
+    padding: 1.68em 2%;
+    background: #ff002f;
+
+}
+
+.Chamada-Cursos h2{
+
+    display: inline-block;
+   /*  border-bottom: 1px solid white; */
+    color: white;/* COR DA LETRA */
+    font-size: 1.68em;/* TAMANHO DA LETRA */
+    text-transform: uppercase; /* SERVE PARA DEIXAR TODAS AS LETRAS MAIUSCULAS */
+    font-family: 'Orbitron', sans-serif;/* FONT RETIRADA DO GOOGLE */
+
+
+}
+
+.Box-Cursos{
+
+    padding: 2.5em 0;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.Box-Cursos > .Centro{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.Box-Cursos-Individuais{
+
+    width: 33.3%;
+    padding: 0 2.5em;
+
+}
+
+.Box-Cursos-Conteudo{/* APENAS O FUNDO (CAIXA) */
+
+    border: 0.12em solid white;
+    box-shadow: 3px 3px 20px  rgb(0, 0, 0);
+    min-height: 9.75em;
+    padding: 0.18em;
+    background-color: transparent;
+    border-radius:  0.93em;
+    color: white;
+    transition: all 0.5s ease-in-out;/* DEFININDO UMA TRANSIÇÃO */
+
+}
+
+.Box-Cursos-Conteudo:hover{/* MEXENDO NA CAIXA QUANDO PASSA O MOUSE EM CIMA */
+    box-shadow: 0 0 0.73em rgb(255, 0, 0),
+            inset 0 0 0.73em rgb(255, 0, 0);/* INSET SIGNIFICA COLOCAR O EFEITO DA BORDA PARA DENTRO */
+    cursor: cell;/* TROCANDO O POINTER DO MOUSE PARA UM MOUSE */
+    /* background-color: rgb(10, 10, 10); */
+
+    /* ISSO SERVE PARA AUENTAR A CAIXA SELECIONADA COM O MOUSE (OLHEI NA INTERNET) */
+    /* -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3); */
+    transform: scale(1.3);/* SERVE PARA DETERMINAR SE ELE IRA PARA FRENTE OU PARA TRAS */
+
+}
+
+.Box-Cursos-Individuais h2{/* APENAS NA LETRA (TITULO) */
+
+    /* background: rgb(145, 10, 179); */
+    text-align: center;
+    padding: 0.18em;
+    color: white;
+    font-weight: lighter;
+    border-radius: 0.93em;
+    margin-top: 0.56em;
+
+}
+
+.Box-Cursos-Individuais p{/* MEXENDO NOS PARAGRAFOS DENTRO DAS CAIXAS */
+
+    margin-left: 1.25em;
+    color: rgb(255, 255, 255);
+    font-size: 1.06em;
+    margin-top: 0.56em;
+    font-weight: lighter;
+
+}
+
+.Pontos-Cursos{
+
+    padding: 0.5em 0 0.93em 0;
+
+}
+
+.Preco{
+
+    margin: 0.62em;
+    padding: 0.93em 0;
+    text-align: center;
+
+}
+
+.Preco h2{
+
+    font-size: 1.56em;
+    color: rgb(255, 255, 255);
+    padding: 0 1.25em;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;/* ISSO AQUI SERVE PARA MUDAR O MOUSE EM CIMA DO BOTÃO */
+
+}
+
+section.Sobre{
+
+    position: relative;
+    background-image: url('../Img/CoD.gif');
+    /* background-attachment: fixed; */
+    background-size: cover;/* SE AJUSTA EM RELAÇÃO A TELA */
+    background-position: center;
+    width: 100%;
+    padding: 0.93em 0;
+    min-height: 30%;/* ALTURA PRINCIPAL DO PRIMEIRO */
+
+}
+
+.Transparencia{
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;/* PEGAR 100% DA TELA */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+}
+
+section.Sobre > .Centro{
+    
+    position: relative;
+    max-width: 60em;
+    color: white;
+    z-index: 1;
+    margin-top: 3.37em;
+
+}
+
+section.Sobre h2{
+
+    text-align: center;
+    font-size: 2.81em;
+
+}
+
+section.Sobre p{
+
+    margin-top: 0.93em;
+    text-align: center;
+
+}
+
+section.Section-Info{
+
+    padding: 1.87em;
+
+}
+
+section.Section-Info h2{
+
+    position: relative;
+    color: rgb(0, 0, 0);
+    
+}
+
+.T50{
+
+    float: left;
+    width: 100%;
+    padding: 0 1.25em;
+    margin: 1.87em 0;
+
+}
+
+section.Section-Info h2 > .Borda-Efeito{
+
+    width: 3.12em;
+    height: 0.13em;
+    background: #000000;
+    position: absolute;
+    transition: 0.4s;
+    margin-top: -0.31em;
+
+}
+
+section.Section-Info h2:hover > .Borda-Efeito{
+
+    width: 6.25em;
+    background: rgb(255, 0, 0);
+
+}
+
+.Contato form{
+
+    margin-top: 0.93em;
+    
+}
+
+.Contato input:not([type="submit"]){
+
+    width: 100%;
+    height: 2.5em;
+    font-size: 0.93em;
+    border: 0.06em solid rgb(0, 0, 0);
+    padding-left: 0.5em;
+    display: block;
+    margin-top: 0.62em;
+    /* outline: none;/* SERVE PARA NÃO CRIAR UMA BORDA NO INPUT QUANDO CLICADO */
+    outline-color: #ff002f;/* DEFINIR A COR DA BORDA DO INPUT QUANDO CLICAR */
+    /* box-shadow: 3px 3px 20px  rgb(0, 0, 0); */
+
+}
+
+.Contato textarea{
+
+    font-size: 0.93em;
+    width: 100%;
+    height: 7.5em;
+    border: 0.062em solid #000;
+    margin-top: 0.625em;
+    padding: 0.5em;
+    resize: none;
+    outline-color: #ff002f;
+    /* box-shadow: 3px 3px 20px  rgb(0, 0, 0); */
+
+}
+
+.Contato input[type="submit"]{
+
+    font-size: 0.93em;
+    cursor: pointer;
+    background: #ff002f;
+    color: white;
+    width: 6.25em;
+    height: 2.18em;
+    border-radius: 1.87em;
+    margin-top: 0.93em;
+     /* border: 0; *//*SERVE PARA RETIRAR A BORDA */
+
+}
+
+.Time > .T50{
+
+    width: 48%;
+    margin: 0.93em 1%;
+
+}
+
+.Equipe-Individual{
+
+    padding: 0.65em 0.5em;
+    border: 1px solid #000;
+    min-height: em;
+    padding-bottom: 1.875em;
+    box-shadow: 10px 5px 15px  rgb(41, 41, 41);
+
+}
+
+.Topo-Box-Usuario{
+
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #000;
+
+}
+
+.Box-Avatar{
+
+    display: inline-block;
+    width: 3.125em;
+    height: 3.125em;
+    border-radius: 50%;
+    background: rgb(83, 83, 83);
+    vertical-align: middle;
+
+}
+
+.Info-Usuario{
+
+    display: inline-block;
+    padding: 0.5em;
+    vertical-align: middle;
+
+}
+
+.Descricao-Usuario-Box p{/* MEXENDO NO PARAGRADO QUE FALA SOBRE EU  */
+
+    margin-top: 8px;
+
+}
+
+/* MEXENDO AQUI APENAS NO FOOTER */
+
+footer{
+
+    width: 100%;
+    padding: 0.625em 2%;
+    background-color: black;
+    color: white;
+    height: 6em;/* 240px */
+    /* padding-top: 1.93em; */
+    text-align: center;
+    font-size: 0.93em;
+    padding-top: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+footer a{
+
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+
+}
+
+footer a:hover{
+
+    color: rgb(49, 49, 49);
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+/* AQUI ACABEI DE FORMATAR O FOOTER */
+
+::-webkit-scrollbar{/* APENAS A BARRA EM SI */
+
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-track{/* COR DE FUNDO DA BARRA */
+
+    background-color: black;
+
+}
+
+::-webkit-scrollbar-thumb{/* MEXENDO NA BARRA DE ROLAGEM */
+
+    background-color: #ff002f;
+    border-radius: 4px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{/* MEXENDO QUANDO CLICAR NELA */
+
+    background-color: rgb(167, 7, 7);
+
+}
+
+
+/* INICIANDO RESPOSIVIDADE */
+
+
+@media screen and (max-width: 1366px) {
+
+    section.Sobre > .Centro {
+
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 4.37em;
+    
+    }
+    
+}
+
+@media screen and (max-width: 770px) {/* MAXIMO DE LARGURA *//* A BAIXO DE 768 OS ITENS IRÃO SE COMPORTAR DE OUTRO MODO*/
+
+    .Conteudo-Cabecalho {
+
+        position: relative;
+        z-index: 1;
+        max-width: 703px;
+        margin: 5.5em 1.25em;
+
+    }
+    
+    nav.Mobile{
+
+        display: block;
+
+    }
+
+    nav.Desktop{
+
+        display: none;
+
+    }
+
+    .Box-Cursos > .Centro{
+
+        display: flex;
+       flex-direction: column;
+    
+    }
+
+    .Box-Cursos-Conteudo {
+
+        border: 0.12em solid rgb(255, 255, 255);
+        /* box-shadow: 3px 3px 20px rgb(0 0 0); */
+        min-height: 10.75em;
+        padding: 0.18em;
+        width: 250px;
+        margin-bottom: 15px;
+
+    }
+
+    .Box-Cursos-Individuais {
+        
+        width: 44.3%;
+        padding: 0 2.5em;
+
+    }
+
+    .T50 {
+
+        float: left;
+        width: 100%;
+        padding: 0 1.25em;
+        margin: 1.87em 0;
+
+    }
+    
+    .Time > .T50 {
+
+        width: 100%;
+        margin: 0.93em 1%;
+        padding: 0.93em;
+
+    }
+
+    section.Section-Info {
+
+        padding: 0em;
+
+    }
+
+    section.Sobre > .Centro {
+
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 3.37em;
+
+    }
+
+}
+
+@media screen and (max-width: 652px) {
+
+    .Box-Cursos-Individuais {
+        
+        width: 52.3%;
+        padding: 0 2.5em;
+
+    }
+
+    .Conteudo-Cabecalho {
+
+        position: relative;
+        z-index: 1;
+        max-width: 650px;
+        margin: 5.5em 1.25em;
+    }
+    
+}
+
+@media screen and (max-width: 556px) {
+
+    .Box-Cursos-Individuais {
+        
+        width: 59.3%;
+        padding: 0 2.5em;
+
+    }
+
+    section.Sobre > .Centro {
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 1.37em;
+    }
+    
+}
+
+@media screen and (max-width: 483px) {
+
+    .Box-Cursos-Individuais {
+        
+        width: 72%;
+        padding: 0 2.5em;
+
+    }
+    
+}
+
+@media screen and (max-width: 426px) {
+
+    .Box-Cursos-Individuais {
+        
+        width: 80%;
+        padding: 0 2.5em;
+
+    }
+
+    section.Sobre > .Centro {
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 1.37em;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+
+    .Box-Cursos-Individuais {
+
+        width: 95%; 
+        padding: 0 2.5em;
+
+   }
+    
+}
+
+@media screen and (max-width: 367px) {
+
+    .Box-Cursos-Individuais {
+
+        width: 95%; 
+        padding: 0 2.5em;
+
+    }
+
+    section.Sobre > .Centro {
+        position: relative;
+        max-width: 60em;
+        color: white;
+        z-index: 1;
+        margin-top: 1.37em;
+    }
+    
+}
+
+@media screen and (max-width: 305px) {
+    
+    .Box-Cursos-Individuais {
+
+        width: 100%; 
+       padding: 0 2.5em;
+       margin-left: -0.93em;
+
+   }
+
+}
+
+@media screen and (max-width: 298px) {
+    
+    Cursos-Conteudo {
+
+        border: 0.12em solid rgb(255, 255, 255);
+        /* box-shadow: 3px 3px 20px rgb(0 0 0); */
+        min-height: 10.75em;
+        padding: 0.18em;
+        width: 150px;
+        margin-bottom: 15px;
+
+    }
+
+    .Box-Cursos-Individuais {
+
+        width: 100%; 
+        padding: 0 2.5em;
+        margin-left: -0.93em;
+
+   }
+
+}
